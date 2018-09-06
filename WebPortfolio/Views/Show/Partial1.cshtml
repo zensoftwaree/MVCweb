@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebPortfolio.Models.ArticleModel>
+
+<h1>
+    @try
+    {
+        @Model.ElementAt(0).Category
+    }
+    catch { }
+</h1>
+
+
+@foreach (var item in Model) {
+    
+        
+     <div class="article">      
+    <h3>@Html.DisplayFor(modelItem => item.Header)</h3>
+            
+            <p>@Html.DisplayFor(modelItem => item.Text)</p>
+    @if (item.Image1.IdOwn != null) 
+    {
+        <img class="img-article" width="300"
+                         src="@Url.Action("ShowImgOfArticle", "Show",
+                        new { id = item.Image1.IdOwn })" />
+    }
+    </div>        
+}
+

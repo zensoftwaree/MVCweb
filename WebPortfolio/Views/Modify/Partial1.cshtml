@@ -1,0 +1,40 @@
+﻿@model WebPortfolio.Models.ArtWorkModel
+
+@using (Html.BeginForm("AddNew", "Modify", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>ArtWorkEntity</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        Category :
+        
+        @Html.DropDownList("Category", new SelectList(new string[] {"Жилой интерьер","Общественный интерьер",
+            "Архитектурная визуализация/Экстерьеры","3D Моделирование","Предметный дизайн"}))
+
+        Description :
+        
+        @Html.TextArea("Description", "", 5, 50, null)
+
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

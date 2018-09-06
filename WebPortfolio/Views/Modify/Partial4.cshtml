@@ -1,0 +1,38 @@
+﻿@model WebPortfolio.Models.ArticleModel
+
+@using (Html.BeginForm("AddNewArticle", "Modify", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h3>Добавить статью</h3>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        Категория :
+        
+        @Html.DropDownList("Category", new SelectList(new string[] {"О нас","Наши услуги"}))
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Header, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Header)
+                @Html.ValidationMessageFor(model => model.Header)
+            </div>
+        </div>
+
+        @Html.TextArea("Text", "", 12, 100, null)
+
+        <input type="file" name="upload" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Вернуться к списку статей", "ListAllArticles", "Show", null, null)
+</div>

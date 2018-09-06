@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    
+    
+        <div class="header">
+            <div class="logo">
+                <img src="~/Content/logo.png" style="margin-left:106px;" >
+                <img src="~/Content/podpis_logo.png" style="margin-top:20px;">
+                <img src="~/Content/logo_name.png" style="margin-left:35px;margin-top:40px;">
+            </div>
+            <div id="menu">
+                
+                <ul >
+                    <li>О нас</li>
+                    <li>Наши услуги</li>
+                    <li>Портфолио</li>
+                    <li>Написать нам</li>
+                    <li>Наши контакты</li>
+                </ul>
+                    
+            </div>
+            <!-- Carousel ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active" style="max-height:800px;">
+          <img src="/show/getrndimage/?z=0" style="width:100%;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via aG properly due to web browser security rules.</p>
+            </div>
+          </div>
+        </div>
+          
+          @for (var i = 1; i < 10; i++ )
+        {
+          <div class="item" style="max-height:800px;">
+          <img src="/show/getrndimage/?z=@i" style="width:100%;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via aG properly due to web browser security rules.</p>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+            <!-- /.carousel -->
+        </div>
+    
+
+    <div class="body-content">
+        
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="contactWith"></div>
+            <img src="~/Content/footer_bg.jpg" width="1120">
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/JqueryMyScripts.js"></script>
+    <script src="~/Scripts/jquery.cycle.all.js"></script>
+</body>
+</html>

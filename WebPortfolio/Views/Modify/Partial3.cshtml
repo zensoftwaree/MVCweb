@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebPortfolio.Models.ArtWorkModel>
+
+
+@foreach (var item in Model) {
+    <div class="work">
+            @Html.DisplayFor(modelItem => item.Category)
+       
+            @Html.DisplayFor(modelItem => item.Description)
+        
+            <img class="img" width="500" src="@Url.Action("ShowImg", "Modify", new { id = item.Id, idSlide = item.Images[0].IdOwn })" />
+        
+    <br>
+        
+            @for (int i = 0; i < item.Images.Count; i++ )
+            {
+                
+            <img class="img-thumbnail" width="150"
+                         src="@Url.Action("ShowImg", "Modify",
+                        new { id = item.Id, idSlide = item.Images[i].IdOwn })" />
+                
+                   
+            }
+        
+   <hr />
+        </div>
+ 
+}
+

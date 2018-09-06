@@ -1,0 +1,5 @@
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Entity\bin\Debug\Entity.dll
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Entity\bin\Debug\Entity.pdb
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Entity\obj\Debug\Entity.dll
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Entity\obj\Debug\Entity.pdb
+C:\Users\Zen\documents\visual studio 2012\Projects\WebPortfolio\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

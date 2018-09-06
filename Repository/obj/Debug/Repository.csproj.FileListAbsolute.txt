@@ -1,0 +1,7 @@
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\bin\Debug\Repository.dll
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\bin\Debug\Repository.pdb
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\bin\Debug\Entity.dll
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\bin\Debug\Entity.pdb
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\obj\Debug\Repository.dll
+c:\users\zen\documents\visual studio 2012\Projects\WebPortfolio\Repository\obj\Debug\Repository.pdb

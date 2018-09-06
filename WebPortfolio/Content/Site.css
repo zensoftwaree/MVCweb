@@ -1,0 +1,179 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #333333; 
+}
+
+p {
+    color:white;
+    font-size:large;
+    font-family:'Bell MT';
+ }
+
+.footer_img {
+width:auto; 
+opacity:0.2; /* Полупрозрачность элемента */
+}
+
+.header {
+    /*background:url("header_bg.png");*/
+    background:#333333; 
+    
+    width:auto;
+    
+}
+
+#menu {
+    margin-top:0px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0px;
+    position:fixed;
+    z-index:99;
+    top:0px;
+    background: #656565;
+    width:100%;
+}
+
+#menu ul {
+    width:46em;
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+}
+
+#menu ul li {
+    padding-left:0.5em;
+    padding-right:0.5em;
+    display:inline;
+    color:white;
+    font-size:large;
+}
+
+.logo {
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:40px;
+    width: 502px;
+     
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #333333; 
+    
+}
+
+.works {
+    padding-left: 1em;
+    padding-right: 2em;
+    
+}
+
+.work {
+    
+    position: relative;
+    padding:1em;
+    overflow:hidden;
+    margin-bottom: 1em;
+}
+
+.work .img {
+    
+    float:left;
+    width:550px;
+    padding-right:1em;
+    padding-top:1em;
+    
+}
+
+.work #right {
+        
+        
+        color: white;
+        font-size: large;
+        font-family: 'Bell MT';
+                
+        
+    }
+
+.work #right p {
+            padding-bottom:1em;
+        }
+
+#fullframe {
+    width:1000px;
+}
+
+#fullframe img {
+    width:1000px;
+}
+
+table tr td {
+    width:20%;
+}
+
+
+
+.article {
+    margin-left:2em;
+    margin-right:2em;
+}
+
+h3 {
+    color:gold;
+    font-family:'Bell MT';
+}
+
+h1 {
+    color:gold;
+    
+}
+
+.article p {
+    padding-left:1em;
+    padding-right:1em;
+    color:white;
+    font-size:large;
+    font-family:'Bell MT';
+    clear:both;
+}
+
+.form-horizontal {
+    color:gold;
+    font-family:'Bell MT';
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input[type="text"],
+input[type="password"] {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}

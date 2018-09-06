@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebPortfolio.Models.ArticleModel>
+
+<p>
+    @Html.ActionLink("Добавить статью", "AddNewArticle", "Modify", null, null)
+</p>
+<table class="table" >
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Header)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th>Изображение</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <p>@Html.DisplayFor(modelItem => item.Category)</p>
+        </td>
+        <td>
+            <p>@Html.DisplayFor(modelItem => item.Header)</p>
+        </td>
+        <td>
+            <p>@Html.DisplayFor(modelItem => item.Text)</p>
+        </td>
+        <td>
+             @if (item.Image1.IdOwn != null) 
+    {
+        <img class="img-article" width="200"
+                         src="@Url.Action("ShowImgOfArticle", "Show",
+                        new { id = item.Image1.IdOwn })" />
+    }
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Удалить", "EraseArticle", "Modify", new {  id=item.Id  }, null)
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("К основному виду сайта", "Index", "Show", null, null)
+</p>
